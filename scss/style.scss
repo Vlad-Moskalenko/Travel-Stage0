@@ -1,0 +1,430 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+ul {
+    padding-inline-start: 0;
+}
+
+html {
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+input {
+    border: none;
+}
+
+picture {
+    font-size: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+.wrapper {
+    position: relative;
+    max-width: 144rem;
+    margin: auto;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.7);
+}
+
+.preview {
+    background: url(../assets/img/garrett-parker-DlkF4-dbCOU-unsplash\ 1.jpg);
+    background-size: cover;
+}
+
+.header {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.5rem 8.33%;
+    background: rgba(242, 120, 92, 0.7);
+    box-shadow: 0px 4px 4px rgba(13, 96, 111, 0.5);
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+    margin-right: 0.6rem;
+}
+
+.navigation-list {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    justify-content: space-between;
+    width: 52.7rem;
+    gap: 8%;
+    margin-right: 4rem;
+}
+
+.burger-menu {
+    display: none;
+}
+
+.close-icon {
+    position: absolute;
+    top: 15.54px;
+    right: -30.45px;
+    transition: all 1s;
+    z-index: 1;
+}
+
+.preview-content {
+    margin: 0 8.33%;
+    padding-top: 12.2rem;
+    max-width: 89.2rem;
+    padding-bottom: 25.4rem;
+}
+
+.steps {
+    width: 100%;
+    padding: 8rem 9.33% 9.7rem;
+}
+
+.three-steps {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4rem;
+
+    .icon {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        align-items: center;
+    }
+
+    .icon:nth-child(2) {
+        margin-left: 6%;
+    }
+}
+
+.destinations {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 8rem;
+}
+
+.destinations_img {
+    width: 175%;
+    display: flex;
+    justify-content: center;
+    padding: 4.6rem 0 2.4rem 0;
+    gap: 6rem;
+    transition: all 1s;
+
+    img {
+        border-radius: 16px;
+        max-width: 100%;
+    }
+}
+
+.slide1,
+.slide2,
+.slide3 {
+    position: relative;
+}
+
+.figcaption {
+    position: absolute;
+    bottom: 40px;
+    left: 15px;
+    z-index: 1;
+}
+
+.stories {
+    width: 100%;
+}
+
+.wrapper-stories{
+    margin-top: 4rem;
+    background: url(../assets/img/block3-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.stories-content{
+    background: rgba(255, 255, 255, 0.7);
+    padding: 4rem 8.33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+.story{
+    display: flex;
+    gap: 4rem;
+
+    img{
+        align-self: flex-start;
+        filter: drop-shadow(0px 4px 4px #0D606F);
+        border-radius: 16px;
+    }
+
+    p,
+    a {
+        margin-top: 2.4rem;
+    }
+}
+
+.footer {
+    width: 100%;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.3rem 8.33% 1.3rem 41%;
+}
+
+.social-media {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.arrow {
+    font-size: 40.5px;
+    padding-bottom: 5px;
+}
+
+.right{
+    animation: right 3s ease-in-out;
+}
+
+.left{
+    animation: left 3s ease-in-out;
+}
+
+@keyframes right {
+    from { margin-right: 0; }
+    to { margin-right: -120%;}
+}
+
+@keyframes left {
+    from { margin-right: 0; }
+    to { margin-right: 120%;}
+}
+
+@media (max-width: 945px){
+
+    .header {
+        .btn-login {
+            display: none;
+        }
+    }
+
+    .preview-content h1 {
+        font-size: 40px;
+        line-height: 48px;
+    }
+
+    .preview-content {
+        padding-bottom: 12rem;
+        padding-top: 12rem;
+    }
+
+    .navigation-list {
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        right: -165px;
+        padding: 44px 15px 30px 44px;
+        width: 165px;
+        height: 250px;
+        background: #F2785C;
+        box-shadow: 0px 4px 3px rgba(13, 96, 111, 0.25);
+        border-radius: 10px;
+        flex-direction: column;
+        margin-right: 0;
+        transition: all 1s;
+        gap: 10px;
+    }
+
+    .nav-show {
+        right: 0;
+    } 
+
+    .burger-menu {
+        display: block;
+    }
+
+    .hidden {
+        display: block;
+    }
+
+    .close-icon-show {
+        right: 134.55px;
+    }
+
+    .story{
+        flex-direction: column;
+        align-items: center;
+        text-align: justify;
+    }
+
+    .footer-content {
+        padding: 1.5rem;
+        justify-content: center;
+
+        small {
+            display: none;
+        }
+    }
+
+    .social-media {
+        padding-left: 9px;
+    }
+}
+
+@media (max-width: 425px) {
+    
+    .preview {
+        background: linear-gradient(180deg, #0D606F 0%, rgba(13, 96, 111, 0) 25.1%), url(../assets/img/background-390px.jpg);
+        height: 25.1rem;
+        background-size: cover;
+    }
+
+    .header {
+        padding: 4.3rem 1.6rem 0;
+        background: none;
+        box-shadow: none;
+
+        h3 {
+            display: none;
+        }
+    }
+
+    .preview-content {
+        margin: 0 1.5rem;
+        padding-top: 14.2rem;
+        max-width: 89.2rem;
+
+        h1 {
+            display: none;
+        }
+
+        h6 {
+            display: none;
+        }
+    }
+
+    .steps {
+        padding: 2rem 1.5rem;
+    }
+    
+    .three-steps {
+        margin-top: 2rem;
+
+        .icon:nth-child(1) {
+            text-align: left;
+            align-items: flex-start;
+            flex-grow: 1;
+        }
+
+        .icon:nth-child(2) {
+            flex-grow: 2;
+            white-space: nowrap;
+            margin-left: 7%;
+        }
+
+        .icon:nth-child(3) {
+            flex-grow: 1;
+            text-align: right;
+            align-items: flex-end;
+        }
+    
+        .icon {
+            gap: 1.9rem;
+
+            img {
+                width: 7rem;
+                border-radius: 16px;
+            }
+        }
+    }
+
+    .destinations {
+        margin-bottom: 2rem;
+    }
+    
+    .destinations_img {
+        padding: 2rem 1.5rem 1rem;
+        gap: 6rem;
+        width: 100%;
+        align-items: center;
+
+        .figcaption {
+            position: absolute;
+            top: 8px;
+            left: 15px;
+            z-index: 1;
+        }
+
+        .slide1,
+        .slide2,
+        .slide3 {
+            display: none; 
+        }
+        
+        .show {
+            display: block;
+            animation: opacity 0.5s ease-in-out;
+        }
+    }
+
+    .controls {
+        margin-top: -31px;
+        z-index: 100;
+        margin-bottom: 0;
+        gap: 0.6rem;
+    }
+
+    .arrow {
+        font-size: 10px;
+        padding-bottom: 0.5px;
+    }
+
+    .wrapper-stories {
+        margin-top: 1rem;
+        background: url(../assets/img/background-stories.jpg);
+    }
+
+    .stories-content{
+        padding: 0.5rem 1.5rem 1.3rem;
+        gap: 1rem;
+    }
+    
+    .story{
+        margin-top: 0.5rem;
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+    
+        img{
+            border-radius: 16px;
+        }
+    
+        p {
+            margin-top: 1rem;
+        }
+
+        a {
+            margin-top: 0rem;
+        }
+    }
+}
+
